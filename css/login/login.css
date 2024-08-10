@@ -19,14 +19,28 @@
 }
 
 /* 로그인 입력 받기 */
-.email input,
-.password input {
+.email,
+.password {
     width: 100%;
     height: 40px;
-    padding: 0px 20px;
     border-radius: 4px;
     border: 1px solid #e4e4e4;
     margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.email input,
+.password input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.password-invisible {
+    width: 20px;
+    height: 20px;
 }
 
 .login-btn {

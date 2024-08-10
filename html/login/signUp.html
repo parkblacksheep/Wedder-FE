@@ -1,98 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="../../css/common/reset.css" />
-    <link rel="stylesheet" href="../../css/login/signUp.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/> 
-    <script defer src="../../js/main/main.js"></script>
-
-</head>
-<body>
-    <div id="header-placeholder"></div>
-    <div class="hd__inner500">
-        
-
-
-        <!-- 타이틀 -->
-        <section class="sign-up">
-            <div class="sign-title">
-                <h1>회원가입</h1>
-            </div>
-            <div class="profile">
-                <img class="profile-img" src="../../assets/images/profile.png" alt="프로필 이미지" />
-                <div>
-                    <button class="profile-put"><img src="../../assets/images/icon-camera.png" alt="카메라 아이콘"></button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="../../css/common/reset.css" />
+        <link rel="stylesheet" href="../../css/login/signUp.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <script defer src="../../js/main/main.js"></script>
+    </head>
+    <body>
+        <div id="header-placeholder"></div>
+        <div class="hd__inner500">
+            <!-- 타이틀 -->
+            <section class="sign-up">
+                <div class="sign-title">
+                    <h1>회원가입</h1>
                 </div>
-            </div>            
-        
-            <!-- 아이디&비밀번호 -->
-            <div class="input-block">
-                <input type="text" name="id" placeholder="아이디" required="required" />
-            </div>
-            <div  class="input-block">
-                <input type="password" name="pass" placeholder="비밀번호" />
-                <span class="material-symbols-outlined">
-                    visibility
-                </span>
-            </div>
-            <div  class="input-block">
-                <input type="password" name="pass-check" placeholder="비밀번호 확인" />
-                <span class="material-symbols-outlined">
-                    visibility
-                </span>
-            </div>
+                <div class="profile">
+                    <img
+                        class="profile-img"
+                        src="../../assets/images/profile.png"
+                        alt="프로필 이미지"
+                    />
+                    <div>
+                        <button class="profile-put">
+                            <img
+                                src="../../assets/images/icon-camera.png"
+                                alt="카메라 아이콘"
+                            />
+                        </button>
+                    </div>
+                </div>
 
-
-            <!-- 개인정보 입력 -->
-        
-            <div class="info-block">
-                <div class="label-block">
-                    <label for="user-name" class="require-info">이름</label> 
+                <!-- 아이디&비밀번호 -->
+                <div class="input-block">
+                    <input
+                        type="text"
+                        name="id"
+                        placeholder="아이디"
+                        required="required"
+                    />
                 </div>
                 <div class="input-block">
-                    <input type="text" name="user-name" placeholder="이름" />
-                </div>
-            </div>
-            <div class="info-block">
-                <div class="label-block">
-                    <label for="user-birth" class="require-info" pattern=".{8, 8}" required title="생년월일 8글자를 입력해주세요.">생년월일</label>
+                    <input type="password" name="pass" placeholder="비밀번호" />
+                    <span class="material-symbols-outlined"> visibility </span>
                 </div>
                 <div class="input-block">
-                    <input type="number" name="user-birth" placeholder="생년월일 8자리" />
+                    <input
+                        type="password"
+                        name="pass-check"
+                        placeholder="비밀번호 확인"
+                    />
+                    <span class="material-symbols-outlined"> visibility </span>
                 </div>
-            </div>
-            <div class="info-block">
-                <div class="label-block">
-                    <label for="user-phone" class="require-info">연락처</label>
+
+                <!-- 개인정보 입력 -->
+
+                <div class="info-block">
+                    <div class="label-block">
+                        <label for="user-name" class="require-info">이름</label>
+                    </div>
+                    <div class="input-block">
+                        <input
+                            type="text"
+                            name="user-name"
+                            placeholder="이름"
+                        />
+                    </div>
                 </div>
-                <div class="input-block">
-                    <input type="tell" name="user-phone" placeholder="휴대폰 번호" />
+                <div class="info-block">
+                    <div class="label-block">
+                        <label
+                            for="user-birth"
+                            class="require-info"
+                            pattern=".{8, 8}"
+                            required
+                            title="생년월일 8글자를 입력해주세요."
+                            >생년월일</label
+                        >
+                    </div>
+                    <div class="input-block">
+                        <input
+                            type="number"
+                            name="user-birth"
+                            placeholder="생년월일 8자리"
+                        />
+                    </div>
                 </div>
-            </div>
-            <div class="info-block">
-                <div class="label-block">
-                    <label for="user-email" class="require-info">이메일</label>
+                <div class="info-block">
+                    <div class="label-block">
+                        <label for="user-phone" class="require-info"
+                            >연락처</label
+                        >
+                    </div>
+                    <div class="input-block">
+                        <input
+                            type="tell"
+                            name="user-phone"
+                            placeholder="휴대폰 번호"
+                        />
+                    </div>
                 </div>
-                <div class="input-block">
-                    <input type="email" name="user-email" placeholder="이메일 주소" />
+                <div class="info-block">
+                    <div class="label-block">
+                        <label for="user-email" class="require-info"
+                            >이메일</label
+                        >
+                    </div>
+                    <div class="input-block">
+                        <input
+                            type="email"
+                            name="user-email"
+                            placeholder="이메일 주소"
+                        />
+                    </div>
                 </div>
-            </div>
-            <div class="info-block">
-                <label for="gender">남자</label>
-                <label for="gender">여자</label>
-            </div>
-        </section>
-
-
-
-
-
-
-    </div>
-    <div id="footer-placeholder"></div>
-    <script src="../../js/login/signUp.js"></script>
-</body>
+                <div class="info-block">
+                    <label for="gender">남자</label>
+                    <label for="gender">여자</label>
+                </div>
+            </section>
+        </div>
+        <div id="footer-placeholder"></div>
+        <script src="../../js/login/signUp.js"></script>
+    </body>
 </html>
