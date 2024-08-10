@@ -211,6 +211,11 @@ table {
     margin: 0 auto;
 }
 
+.hd__inner400 {
+    width: 400px;
+    margin: 0 auto;
+}
+
 .hd__inner1400 {
     width: 1400px;
     margin: 0 auto;
