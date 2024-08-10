@@ -39,8 +39,9 @@
 }
 
 .password-invisible {
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 18px;
+    margin-right: 13px;
 }
 
 .login-btn {
