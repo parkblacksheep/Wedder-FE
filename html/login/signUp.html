@@ -1,131 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sign Up</title>
-        <link rel="stylesheet" href="../../css/common/reset.css" />
-        <link rel="stylesheet" href="../../css/login/signUp.css" />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        />
-        <script defer src="../../js/main/main.js"></script>
-    </head>
-    <body>
-        <div id="header-placeholder"></div>
-        <div class="hd__inner500">
-            <!-- 타이틀 -->
-            <section class="sign-up">
-                <div class="sign-title">
-                    <h1>회원가입</h1>
-                </div>
-                <div class="profile">
-                    <img
-                        class="profile-img"
-                        src="../../assets/images/profile.png"
-                        alt="프로필 이미지"
-                    />
-                    <div>
-                        <button class="profile-put">
-                            <img
-                                src="../../assets/images/icon-camera.png"
-                                alt="카메라 아이콘"
-                            />
-                        </button>
-                    </div>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../../css/common/reset.css" />
+    <link rel="stylesheet" href="../../css/login/signUp.css" />
+    <script defer src="../../js/main/main.js"></script>
 
-                <!-- 아이디&비밀번호 -->
-                <div class="input-block">
-                    <input
-                        type="text"
-                        name="id"
-                        placeholder="아이디"
-                        required="required"
-                    />
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <div class="hd__inner400">
+        
+        <!-- 타이틀 -->
+        <section class="sign-up">
+            <div class="sign-title">
+                <h1>회원가입</h1>
+                <div class="required-block">
+                    <p class="required-info">필수입력사항</p>
                 </div>
-                <div class="input-block">
-                    <input type="password" name="pass" placeholder="비밀번호" />
-                    <span class="material-symbols-outlined"> visibility </span>
+            </div>
+                       
+        
+            <!-- 프로필 & 아이디 -->
+            <div class="profile">
+                <img class="profile-img" src="../../assets/images/profile.png" alt="프로필 이미지" />
+                <div>
+                    <button class="profile-put"><img class="camera-icon" src="../../assets/images/icon-camera.png" alt="카메라 아이콘"></button>
                 </div>
-                <div class="input-block">
-                    <input
-                        type="password"
-                        name="pass-check"
-                        placeholder="비밀번호 확인"
-                    />
-                    <span class="material-symbols-outlined"> visibility </span>
-                </div>
+            </div> 
+            <div class="input-block">
+                <input type="text" name="id" class="inputs" placeholder="아이디" required="required" />
+            </div>
+            <div class="input-block">
+                <input type="password" name="pass" id="pass" class="inputs" minlength="8" maxlength="20" placeholder="비밀번호" />
+                <img
+                    class="password-invisible"
+                    src="../../assets/images/password-invisible.png"
+                />
+            </div>
+            <div class="input-block">
+                <input type="password" name="pass-check" id="pass-check" class="inputs" minlength="8" maxlength="20" placeholder="비밀번호 확인" />
+                <img
+                    class="password-invisible"
+                    src="../../assets/images/password-invisible.png"
+                />
+            </div>
 
-                <!-- 개인정보 입력 -->
 
-                <div class="info-block">
-                    <div class="label-block">
-                        <label for="user-name" class="require-info">이름</label>
-                    </div>
-                    <div class="input-block">
-                        <input
-                            type="text"
-                            name="user-name"
-                            placeholder="이름"
-                        />
-                    </div>
+            <!-- 개인정보 입력 -->     
+            <div class="info-block">
+                <div class="label-block">
+                    <label for="user-name" class="required-input">이름</label> 
                 </div>
-                <div class="info-block">
-                    <div class="label-block">
-                        <label
-                            for="user-birth"
-                            class="require-info"
-                            pattern=".{8, 8}"
-                            required
-                            title="생년월일 8글자를 입력해주세요."
-                            >생년월일</label
-                        >
-                    </div>
-                    <div class="input-block">
-                        <input
-                            type="number"
-                            name="user-birth"
-                            placeholder="생년월일 8자리"
-                        />
-                    </div>
+                <div class="input-block">
+                    <input type="text" id="user-name" name="user-name" class="inputs" placeholder="이름을 입력해주세요" />
                 </div>
-                <div class="info-block">
-                    <div class="label-block">
-                        <label for="user-phone" class="require-info"
-                            >연락처</label
-                        >
-                    </div>
-                    <div class="input-block">
-                        <input
-                            type="tell"
-                            name="user-phone"
-                            placeholder="휴대폰 번호"
-                        />
-                    </div>
+            </div>
+            <div class="info-block">
+                <div class="label-block">
+                    <label for="user-birth" class="required-input" pattern=".{4, 8}" required title="생년월일 8글자를 입력해주세요.">생년월일</label>
                 </div>
-                <div class="info-block">
-                    <div class="label-block">
-                        <label for="user-email" class="require-info"
-                            >이메일</label
-                        >
-                    </div>
-                    <div class="input-block">
-                        <input
-                            type="email"
-                            name="user-email"
-                            placeholder="이메일 주소"
-                        />
-                    </div>
+                <div class="input-block">
+                    <input type="number" id="user-birth" name="user-birth" class="inputs" placeholder="생년월일 8자리를 입력해주세요" />
                 </div>
-                <div class="info-block">
-                    <label for="gender">남자</label>
-                    <label for="gender">여자</label>
+            </div>
+            <div class="info-block">
+                <div class="label-block">
+                    <label for="user-phone" class="required-input">연락처</label>
                 </div>
-            </section>
-        </div>
-        <div id="footer-placeholder"></div>
-        <script src="../../js/login/signUp.js"></script>
-    </body>
+                <div class="input-block">
+                    <input type="tell" id="user-phone" name="user-phone" class="inputs" placeholder="숫자만 입력해주세요" />
+                </div>
+            </div>
+            <div class="info-block">
+                <div class="label-block">
+                    <label for="user-email" class="required-input">이메일</label>
+                </div>
+                <div class="input-block">
+                    <input type="email" id="user-email" name="user-email" class="inputs" placeholder="이메일 주소" />
+                </div>
+            </div>
+            <div class="info-block">
+                <div class="label-block">
+                    <label for="gender" class="gender-label">성별</label>
+                </div>
+                <!-- <label for="gender-man" class=""> 
+                    <input type="radio" name="gender" id="gender-man" value="M">
+                    <span>남자</span>
+                </label>
+                <label for="gender-woman">
+                    <input type="radio" name="gender" id="gender-woman" value="W">
+                    <span>여자</span>
+                </label> -->
+                 <div class="gender-block">
+                    <input type="radio" id="gender" name="gender" value="M">남자
+                    <input type="radio" id="gender" name="gender" value="F">여자
+                </div>           
+            </div>
+
+            <div class="btn-block">
+                <button class="sign-btn">가입하기</button>
+            </div>
+        </section>
+
+
+
+
+
+
+    </div>
+    <div id="footer-placeholder"></div>
+    <script src="../../js/login/signUp.js"></script>
+</body>
 </html>
